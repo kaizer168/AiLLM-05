@@ -19,6 +19,7 @@ class OpenAIModel(Model):
                     response = openai.ChatCompletion.create(
                         model=self.model,
                         messages=[
+                            {"role": "system", "content": '你是一位翻译专家，请将英文翻译成中文'},
                             {"role": "user", "content": prompt}
                         ]
                     )
