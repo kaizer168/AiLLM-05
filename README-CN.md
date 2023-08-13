@@ -7,6 +7,10 @@
     <em>所有的代码和文档完全由 OpenAI 的 GPT-4 模型生成</em>
 </p>
 
+## 新增
+增加了system role。  
+增加了target_language命令行参数和yaml文件参数以支持多语言。  
+
 ## 介绍
 
 OpenAI 翻译器是一个使用 AI 技术将英文 PDF 书籍翻译成中文的工具。这个工具使用了大型语言模型 (LLMs)，如 ChatGLM 和 OpenAI 的 GPT-3 以及 GPT-3.5 Turbo 来进行翻译。它是用 Python 构建的，并且具有灵活、模块化和面向对象的设计。
