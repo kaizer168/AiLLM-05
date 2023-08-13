@@ -17,8 +17,8 @@ class PDFTranslator:
             for content_idx, content in enumerate(page.contents):
                 prompt = self.model.translate_prompt(content, target_language)
                 LOG.debug(prompt)
-                translation, status = self.model.make_request(prompt)
-                LOG.info(translation)
+                translation, status = self.model.make_request(prompt, target_language)
+                LOG.info(translation)                
                 
                 # Update the content in self.book.pages directly
                 self.book.pages[page_idx].contents[content_idx].set_translation(translation, status)

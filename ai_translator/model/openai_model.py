@@ -11,7 +11,7 @@ class OpenAIModel(Model):
         self.model = model
         openai.api_key = api_key
 
-    def make_request(self, prompt):
+    def make_request(self, prompt, target_language):
         attempts = 0
         while attempts < 3:
             try:
@@ -19,11 +19,12 @@ class OpenAIModel(Model):
                     response = openai.ChatCompletion.create(
                         model=self.model,
                         messages=[
-                            {"role": "system", "content": '你是一位翻译专家，请将英文翻译成中文'},
+                            {"role": "system", "content": f"You are a language translator，please translate english text to {target_language}. For table cell please translate english to {target_language}, maintain row and column spacing, please use | character as column separators and return in tabular form, please remove character [ and ]"},
                             {"role": "user", "content": prompt}
                         ]
                     )
-                    translation = response.choices[0].message['content'].strip()
+                    translation = response.choices[0].message['content'].strip()                    
+                    
                 else:
                     response = openai.Completion.create(
                         model=self.model,
@@ -32,7 +33,7 @@ class OpenAIModel(Model):
                         temperature=0
                     )
                     translation = response.choices[0].text.strip()
-
+                
                 return translation, True
             except openai.error.RateLimitError:
                 attempts += 1

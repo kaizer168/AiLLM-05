@@ -1,20 +1,24 @@
-测试数据
-这个数据集包含由OpenAI的AI语言模型ChatGPT提供的两个测试样本。
-这些样本包括一个markdown表格和一个英文文本段落，可以用来测试支持文本和表格格式的英译中翻译软件。
-文本测试
-敏捷的棕色狐狸跳过懒狗。这个句子包含了英语字母表的每一个字母。句子经常被用来测试字体、键盘和其他与文本相关的工具。除了英语，还有许多其他语言的句子。由于语言的独特特性，有些句子的构造更加困难。
-表格测试
+Données de test
+Cet ensemble de données contient deux échantillons de test fournis par ChatGPT, un modèle de langage
+IA développé par OpenAI.
+Ces échantillons comprennent un tableau en markdown et un passage de texte en anglais, qui peuvent être utilisés pour tester un logiciel de traduction anglais-chinois prenant en charge les formats de texte et de tableau.
+Test de texte
+Le renard brun rapide saute par-dessus le chien paresseux. Ce pangramme contient chaque lettre de l'alphabet anglais
+au moins une fois. Les pangrammes sont souvent utilisés pour tester les polices, les claviers et autres outils liés au texte.
+En plus de l'anglais, il existe des pangrammes dans de nombreuses autres langues. Certains pangrammes sont plus
+difficiles à construire en raison des caractéristiques uniques de la langue.
+Test de tableau
 
-| 水果 | 颜色 | 价格（美元） |
+| Fruit  |  Couleur  |  Prix (USD) |
 | --- | --- | --- |
-| 苹果 | 红色 | 1.20 |
-| 香蕉 | 黄色 | 0.50 |
-| 橘子 | 橙色 | 0.80 |
-| 草莓 | 红色 | 2.50 |
-| 蓝莓 | 蓝色 | 3.00 |
-| 猕猴桃 | 绿色 | 1.00 |
-| 芒果 | 橙色 | 1.50 |
-| 葡萄 | 紫色 | 2.00 |
+| Apple  |  Rouge  |  1.20 |
+| Banane  |  Jaune  |  0.50 |
+| Orange  |  Orange  |  0.80 |
+| Fraise  |  Rouge  |  2.50 |
+| Myrtille  |  Bleu  |  3.00 |
+| Kiwi  |  Vert  |  1.00 |
+| Mangue  |  Orange  |  1.50 |
+| Raisin  |  Violet  |  2.00 |
 
 ---
 
